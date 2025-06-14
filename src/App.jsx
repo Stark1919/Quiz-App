@@ -40,7 +40,7 @@ export default function QuizApp() {
     return () => clearInterval(timer);
   }, [currentQuestion]);
 
-  const handleOptionClick = (option: string) => {
+  const handleOptionClick = (option) => {
     setSelected(option);
     if (option === questions[currentQuestion].answer) {
       setScore(score + 1);
